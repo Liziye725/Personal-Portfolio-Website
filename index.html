@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Personal Portfolio of Ziye Li</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <script src="https://kit.fontawesome.com/b04567c453.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">  
+                <nav>
+                    <p class="logo">Ziye Li</p>
+                    <ul id="sidebar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Publish</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <i class="fa-regular fa-rectangle-xmark" style="color: #eacff6;" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" style="color: #dcb9ec;" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front-end Developer</p>
+                    <h1>Hi, I'm <span>Ziye Li</span><br> From China</h1>
+                </div>
+            </div>
+        </div>
+        <!------------------about------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me.jpg">
+                    </div>                    
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p><span class="material-symbols-outlined">sweep</span>&nbsp;&nbsp;I am a highly motivated front-end engineer with a strong passion for problem-solving and writing clean, maintainable code in JavaScript, HTML, and CSS.</p>
+                        <p><span class="material-symbols-outlined">sweep</span>&nbsp;&nbsp;Experienced in collaborating effectively within cross-functional teams, leveraging diverse backgrounds to deliver high-quality solutions.</p>            
+                        <p><span class="material-symbols-outlined">sweep</span>&nbsp;&nbsp;Additionally, I have a proven ability to analyze and solve complex technical problems.</p>
+                        <p><span class="material-symbols-outlined">sweep</span>&nbsp;&nbsp;I am a fast learner and adapt to emerging technologies such as Vue and React. I have also developed a habit of systematic documentation and adhere to code conventions.</p>
+                        </p>
+                        <div class="tap-titles">
+                            <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('project')">Projects</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills
+                        ">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                <li><span>Data analysis</span><br>Building Machine Learning Models</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Master of Computer Science</span><br>Web app Development</li>
+                                <li><span>Bachelor of M</span><br>Building Android/iOS apps</li>
+                                <li><span>Data analysis</span><br>Building Machine Learning Models</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="project">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                <li><span>Data analysis</span><br>Building Machine Learning Models</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                <li><span>Data analysis</span><br>Building Machine Learning Models</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------services------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Desgin</h2>
+                        <p>Using HTML, CSS and JavaScript</p>
+                        <p>Develop</p>
+                        <p>Using</p>
+                        <i class="fa-brands fa-css3"></i>
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-square-js"></i>
+                        <br><a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h2>App Desgin</h2>
+                        <p>Using HTML, CSS and JavaScript</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-book" style="color: #d9dee8;"></i>
+                        <h2>Framework</h2>                    
+                        <p>React, Vue</p>
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-vuejs"></i>
+                        <br><a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------portfolio------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Ziye's Project</h1>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="images/p1.png">
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>It allows users to search for weather information by city name.</p>
+                            <button class="circle-button"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/p3.jpg">
+                        <div class="layer">
+                            <h3>Personal Website</h3>
+                            <p>A personal website designed and programmed by Ziye Li. Utilize HTML, JavaScript and CSS.</p>
+                            <button class="circle-button"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>                        
+                    <div class="project">
+                        <img src="images/paper11.jpg">
+                        <div class="layer">
+                            <h3>Machine Learning for Tissue Classification</h3>
+                            <p>Using multiple ML methods for detecting benign or malignant of tissue.</p>
+                            <button class="circle-button"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/paper22.jpg">
+                        <div class="layer">
+                            <h3>Adaptive Matched Filter De-Noising</h3>
+                            <p>Extracted small signal from large background noise and generated MAP image for better visualization.</p>
+                            <button class="circle-button"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="images/p2-smartcar.jpg">
+                        <div class="layer">
+                            <h3>Smart Car</h3>
+                            <p>Using Q-Learning to predict solutions for the Eight Queens Chess Problem, with the assistance of pre-trained models for enhanced stability.</p>
+                            <button class="circle-button"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">See more</a>                    
+                </div>
+            </div>
+        </div>
+        <!------------------contact me------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope" style="color: #cebbdb;"> E-mail: </i><a href="mailto:liziye725@gmail.com">liziye725@gmail.com</a></p>
+                        <p><i class="fa-solid fa-mobile" style="color: #cfbbe3;"> Mobile: </i>&thinsp;<a>(+45) 50-26-44-14</a></p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/ziye-li-active/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Liziye725/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="cv">
+                            <a href="https://drive.google.com/file/d/1AMZksU0jAV7g4BvJqVIO0M6oxkyFyNFd/view?usp=drive_link" target="_blank" class="btn btn2"><i class="fa-brands fa-google-drive"></i>&thinsp;&thinsp;&thinsp;Online CV</a>
+                            <a href="images/Resume__front_end__Ziye_Li.pdf" class="btn btn2"><i class="fa-regular fa-circle-down"></i>&thinsp;&thinsp;&thinsp;Download CV</a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" cols="10" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2023 Ziye Li. <i class="fa-solid fa-person-dots-from-line" style="color: #d6b5f7;"></i> All rights reserved.</p>
+            </div>
+        </div>
+    <script src="scripts/main.js"></script>
+    </body>
+</html>
